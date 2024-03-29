@@ -1,0 +1,13 @@
+.header,
+.navbar {
+  background-color: #fbfbfe !important;
+  color: red !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.navItems > li > a {
+  font-weight: 700;
+}
