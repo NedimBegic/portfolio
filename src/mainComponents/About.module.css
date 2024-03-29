@@ -1,0 +1,33 @@
+.aboutContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialIcons div {
+  margin-bottom: 10px;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMe div {
+  margin-bottom: 10px;
+}
+
+.aboutMe img {
+  max-width: 10em;
+  height: auto;
+}
+
+.photo {
+  background-color: rgb(190, 66, 66);
+  border-radius: 50%;
+  width: 14em;
+}

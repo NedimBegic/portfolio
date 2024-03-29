@@ -3,3 +3,7 @@
   background-color: #fbfbfe;
   font-family: "Roboto", sans-serif;
 }
+
+body {
+  background-color: #fbfbfe !important;
+}
