@@ -1,0 +1,21 @@
+.section {
+  height: 30em;
+  width: 100%;
+  max-width: 65em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.section h2 {
+  font-weight: bold;
+  font-size: 2.3em;
+}
+
+.section span {
+  color: gray;
+}
