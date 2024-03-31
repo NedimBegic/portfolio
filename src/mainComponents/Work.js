@@ -1,5 +1,6 @@
 import style from "./Work.module.css";
 import Project from "../sideComponents/Project";
+import { gameShop, instagram } from "../utils/projects";
 
 const Work = () => {
   return (
@@ -7,7 +8,8 @@ const Work = () => {
       <h2>Work</h2>
       <span>Most recent Work</span>
       <div>
-        <Project />
+        <Project project={gameShop} />
+        <Project project={instagram} />
       </div>
     </div>
   );

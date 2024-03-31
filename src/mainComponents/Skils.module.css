@@ -54,3 +54,15 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 272px) {
+  .section > div {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 196px) {
+  .section > div {
+    font-size: 0.6em;
+  }
+}

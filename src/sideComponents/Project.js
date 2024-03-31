@@ -3,43 +3,28 @@ import style from "./Project.module.css";
 import { icons } from "../utils/icons";
 import Tool from "./Tool";
 
-const Project = () => {
-  const gameTools = icons.filter((e) =>
-    ["node", "next", "mySql", "postman"].includes(e.name)
-  );
+const Project = ({ project }) => {
+  const gameTools = icons.filter((e) => project.tools.includes(e.name));
 
   return (
-    <div>
-      <h3>Game shop</h3>
-      <img src="/gameshop.png" alt="gameshop" />
-      <div>
-        {gameTools.map(
-          (
-            item,
-            index // Fixed typo: mapr to map
-          ) => (
-            <Tool key={index} tool={item} />
-          )
-        )}
+    <div className={style.project}>
+      <h3>{project.name}</h3>
+      <span>{project.type}</span>
+      <img src={project.img} alt={project.name} />
+      <div className={style.tools}>
+        {gameTools.map((item, index) => (
+          <Tool key={index} tool={item} />
+        ))}
       </div>
-      <p>
-        GameShop is a dynamic full-stack web application tailored for gamers. It
-        offers a seamless user experience with features including secure
-        authentication, game marketplace for buying and selling, CRUD
-        functionality for managing game database, and integration with Imgur for
-        uploading images. Users can stay updated with the latest games,
-        trailers, and news, while engaging in community discussions. GameShop
-        provides a centralized hub for gaming enthusiasts to explore, trade, and
-        connect.
-      </p>
-      <div>
-        <a href="LINK_TO_LIVE_PAGE" target="_blank">
-          <button>Live Page</button>
+      <p>{project.desc}</p>
+      <div className={style.buttons}>
+        <a href={project.live} target="_blank">
+          <button>Visit Page</button>
         </a>
-        <a href="LINK_TO_BACKEND_CODE" target="_blank">
+        <a href={project.backend} target="_blank">
           <button>Backend Code</button>
         </a>
-        <a href="LINK_TO_FRONTEND_CODE" target="_blank">
+        <a href={project.frontend} target="_blank">
           <button>Frontend Code</button>
         </a>
       </div>
