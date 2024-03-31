@@ -35,6 +35,26 @@
   overflow-y: scroll;
   height: 9em;
 }
+.project p::-webkit-scrollbar {
+  width: 5px; /* adjust thickness as needed */
+}
+
+/* Track */
+.project p::-webkit-scrollbar-track {
+  border-radius: 10px; /* adjust border-radius as needed */
+}
+
+/* Handle */
+.project p::-webkit-scrollbar-thumb {
+  background: #888; /* scrollbar color */
+  border-radius: 10px; /* adjust border-radius to match the track */
+}
+
+/* Remove top and bottom arrows */
+.project p::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none;
+}
 
 .buttons {
   width: 100%;
@@ -43,6 +63,10 @@
   flex-wrap: wrap;
   gap: 1em;
   margin-top: 0.3em;
+}
+
+.hide {
+  display: none;
 }
 
 .buttons button {

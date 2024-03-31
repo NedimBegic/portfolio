@@ -20,3 +20,14 @@ export const instagram = {
     "https://github.com/NedimBegic/instagramClone-backend?tab=readme-ov-file",
   frontend: "https://github.com/NedimBegic/instagramClone-frontend/tree/main",
 };
+
+export const extension = {
+  name: "Productive Browser",
+  type: "Javascript extension",
+  img: "/extension.jpg",
+  tools: ["javascript"],
+  desc: "Productive Browser: Developed as the final project for Harvard's CS50 computer science course, this JavaScript extension elevates browsing with note-taking, Pomodoro learning, task management, and night review features. Explore its functionalities in the YouTube presentation below.",
+  live: "https://www.youtube.com/watch?v=01PiYmBNUJc&t=29s&ab_channel=NedimBegic",
+  frontend:
+    "https://github.com/NedimBegic/Productive-Browser-extension-?tab=readme-ov-file",
+};

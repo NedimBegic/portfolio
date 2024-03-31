@@ -19,13 +19,25 @@ const Project = ({ project }) => {
       <p>{project.desc}</p>
       <div className={style.buttons}>
         <a href={project.live} target="_blank">
-          <button>Visit Page</button>
+          <button>
+            {project.name == "Productive Browser"
+              ? "Presentation"
+              : "Visit Page"}
+          </button>
         </a>
-        <a href={project.backend} target="_blank">
+        <a
+          className={project.name == "Productive Browser" ? style.hide : ""}
+          href={project.backend}
+          target="_blank"
+        >
           <button>Backend Code</button>
         </a>
         <a href={project.frontend} target="_blank">
-          <button>Frontend Code</button>
+          <button>
+            {project.name == "Productive Browser"
+              ? "Visit Code"
+              : "Frontend Code"}
+          </button>
         </a>
       </div>
     </div>
