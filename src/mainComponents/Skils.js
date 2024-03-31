@@ -10,11 +10,11 @@ const Skils = () => {
         <div>
           {" "}
           <Skill skillName={"Languages"} />
-          <Skill skillName={"Databases"} />
+          <Skill skillName={"Frameworks"} />
         </div>
         <div>
           {" "}
-          <Skill skillName={"Frameworks"} />
+          <Skill skillName={"Databases"} />
           <Skill skillName={"Other tools"} />
         </div>
       </div>

@@ -8,6 +8,7 @@
   align-items: center;
   margin-left: 2em;
   margin-right: 2em;
+  margin-top: 2em;
 }
 
 .section h2 {
@@ -20,9 +21,9 @@
 }
 
 .section > div {
+  margin-top: 3em;
   width: 100%;
   height: auto;
-  border: 1px solid red;
   max-width: 50em;
   position: relative;
   left: 50%;
