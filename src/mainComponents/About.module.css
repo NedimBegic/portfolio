@@ -11,6 +11,7 @@
   align-items: center;
   margin-left: 2em;
   margin-right: 2em;
+  font-family: "Poppins", sans-serif;
 }
 
 .socialIcons {
@@ -41,6 +42,7 @@
   display: flex;
   flex-direction: row;
   width: 90%;
+  align-items: center;
 }
 
 .aboutMe div {
@@ -53,8 +55,7 @@
 }
 
 .photo {
-  width: 30em;
-  height: 10em;
+  font-size: 3em;
 }
 
 .myInfo {
@@ -93,4 +94,47 @@
 
 .myInfo button:hover {
   background-color: #cc0000;
+}
+
+@media (max-width: 725px) {
+  .photo {
+    font-size: 2.3em;
+  }
+}
+
+@media (max-width: 625px) {
+  .photo {
+    font-size: 2.5em;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19em;
+  }
+
+  .myInfo {
+    width: 80%;
+  }
+}
+
+@media (max-width: 440px) {
+  .photo {
+    font-size: 2em;
+  }
+  .myInfo {
+    width: 90%;
+  }
+}
+
+@media (max-width: 342px) {
+  .photo {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 275px) {
+  .photo {
+    font-size: 1.2em;
+  }
 }
