@@ -1,20 +1,46 @@
 .aboutContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: #fbfbfe !important;
+  width: 100%;
+  height: 40em;
+  max-width: 65em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .socialIcons {
   display: flex;
   flex-direction: column;
+  width: 10%;
+  height: 13em;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .socialIcons div {
   margin-bottom: 10px;
 }
 
+.socialIcons div > * {
+  font-size: 1.2em;
+  color: #ff0000;
+  transition: all 100ms ease-in;
+}
+
+.socialIcons div > *:hover {
+  color: #cc0000;
+  cursor: pointer;
+}
+
 .aboutMe {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 90%;
 }
 
 .aboutMe div {
@@ -27,7 +53,44 @@
 }
 
 .photo {
-  background-color: rgb(190, 66, 66);
-  border-radius: 50%;
-  width: 14em;
+  width: 30em;
+  height: 10em;
+}
+
+.myInfo {
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 40%;
+  text-align: left;
+}
+
+.myInfo h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.soft {
+  font-size: 1.5em;
+  color: rgb(103, 102, 102);
+}
+
+.myInfo p + p {
+  color: gray;
+  font-size: 1.1em;
+}
+
+.myInfo button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+
+.myInfo button:hover {
+  background-color: #cc0000;
 }

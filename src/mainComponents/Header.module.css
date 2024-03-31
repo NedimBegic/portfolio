@@ -1,7 +1,7 @@
 .header {
   background-color: #fbfbfe !important;
   width: 100%;
-  max-width: 70em;
+  max-width: 65em;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -12,12 +12,23 @@
   margin-right: 2em;
 }
 
+.header img {
+  margin-top: 0.2em;
+}
+
+.header * {
+  background-color: #fbfbfe !important;
+}
+
 .navItems > li > a {
   font-weight: 600;
   margin-right: 1em;
   transition: all 300ms ease;
+  background-color: #fbfbfe !important;
 }
-
+.navItems * {
+  background-color: #fbfbfe !important;
+}
 .navItems a:hover {
   color: #ed1c24;
 }
