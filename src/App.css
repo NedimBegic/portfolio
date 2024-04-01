@@ -7,3 +7,27 @@
 body {
   background-color: #fbfbfe !important;
 }
+
+@media (max-width: 1050px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    padding-left: 1em;
+  }
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1200px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    margin-left: -4em;
+  }
+}

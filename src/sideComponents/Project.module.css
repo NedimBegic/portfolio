@@ -123,3 +123,9 @@
     font-size: 0.7em;
   }
 }
+
+@media screen and (min-width: 1070px) and (max-width: 1200px) {
+  .project {
+    margin-left: -1em !important;
+  }
+}
