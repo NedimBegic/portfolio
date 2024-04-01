@@ -36,21 +36,18 @@
   height: 9em;
 }
 .project p::-webkit-scrollbar {
-  width: 5px; /* adjust thickness as needed */
+  width: 5px;
 }
 
-/* Track */
 .project p::-webkit-scrollbar-track {
-  border-radius: 10px; /* adjust border-radius as needed */
+  border-radius: 10px;
 }
 
-/* Handle */
 .project p::-webkit-scrollbar-thumb {
-  background: #888; /* scrollbar color */
-  border-radius: 10px; /* adjust border-radius to match the track */
+  background: #888;
+  border-radius: 10px;
 }
 
-/* Remove top and bottom arrows */
 .project p::-webkit-scrollbar-button:start:decrement,
 ::-webkit-scrollbar-button:end:increment {
   display: none;

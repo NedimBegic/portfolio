@@ -1,0 +1,91 @@
+.section {
+  height: 30em;
+  width: 100%;
+  max-width: 65em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 10em;
+  padding: 2em;
+}
+
+.section h2 {
+  font-weight: bold;
+  font-size: 2.3em;
+}
+
+.section span {
+  color: gray;
+}
+
+.section > div {
+  display: flex;
+}
+
+.contact {
+  width: 30%;
+  padding-left: 6em;
+}
+
+.section form {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1em;
+  padding-left: 9em;
+}
+
+.section form * {
+  padding: 0.4em;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: gray;
+}
+
+.section input {
+  height: 3em;
+}
+
+.section form button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1em;
+  width: 11em;
+}
+
+.section button:hover {
+  background-color: #cc0000;
+}
+
+@media (max-width: 849px) {
+  .section > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .section form {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .section form * {
+    width: 100%;
+  }
+}
