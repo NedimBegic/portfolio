@@ -4,7 +4,7 @@ import Skill from "../sideComponents/Skill";
 const Skils = () => {
   return (
     <div className={style.section}>
-      <h2>Skills</h2>
+      <h2 id="skills">Skills</h2>
       <span>My technical level</span>
       <div>
         <div>

@@ -6,8 +6,11 @@ import Tool from "./Tool";
 const Project = ({ project }) => {
   const gameTools = icons.filter((e) => project.tools.includes(e.name));
 
+  const lastProject =
+    project.name === "Productive Browser" ? style.lastProject : "";
+
   return (
-    <div className={style.project}>
+    <div className={`${style.project} ${lastProject}`}>
       <h3>{project.name}</h3>
       <span>{project.type}</span>
       <img src={project.img} alt={project.name} />
@@ -20,13 +23,13 @@ const Project = ({ project }) => {
       <div className={style.buttons}>
         <a href={project.live} target="_blank">
           <button>
-            {project.name == "Productive Browser"
+            {project.name === "Productive Browser"
               ? "Presentation"
               : "Visit Page"}
           </button>
         </a>
         <a
-          className={project.name == "Productive Browser" ? style.hide : ""}
+          className={project.name === "Productive Browser" ? style.hide : ""}
           href={project.backend}
           target="_blank"
         >
@@ -34,7 +37,7 @@ const Project = ({ project }) => {
         </a>
         <a href={project.frontend} target="_blank">
           <button>
-            {project.name == "Productive Browser"
+            {project.name === "Productive Browser"
               ? "Visit Code"
               : "Frontend Code"}
           </button>

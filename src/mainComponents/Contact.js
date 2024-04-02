@@ -4,7 +4,7 @@ import ContactWays from "../sideComponents/ContactWays";
 const Contact = () => {
   return (
     <div className={style.section}>
-      <h2>Contact Me</h2>
+      <h2 id="contact">Contact Me</h2>
       <span>Get In Touch</span>
       <div>
         <div className={style.contact}>

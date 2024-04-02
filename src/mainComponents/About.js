@@ -9,17 +9,26 @@ import {
 
 const About = () => {
   return (
-    <div className={style.aboutContainer}>
+    <div className={style.aboutContainer} id="about">
       <div className={style.socialIcons}>
-        <div>
-          <FontAwesomeIcon icon={faLinkedin} />
-        </div>
-        <div>
-          <FontAwesomeIcon icon={faGithub} />
-        </div>
-        <div>
-          <FontAwesomeIcon icon={faFacebook} />
-        </div>
+        <a
+          href="https://www.linkedin.com/in/nedim-begic-a42210245/"
+          target="_blank"
+        >
+          <div>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </div>
+        </a>
+        <a href="https://github.com/NedimBegic" target="_blank">
+          <div>
+            <FontAwesomeIcon icon={faGithub} />
+          </div>
+        </a>
+        <a href="https://www.facebook.com/nedim.b.begic/" target="_blank">
+          <div>
+            <FontAwesomeIcon icon={faFacebook} />
+          </div>
+        </a>
       </div>
       <div className={style.aboutMe}>
         <div className={style.myInfo}>

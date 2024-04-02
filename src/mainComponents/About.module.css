@@ -12,6 +12,7 @@
   margin-left: 2em;
   margin-right: 2em;
   font-family: "Poppins", sans-serif;
+  margin-top: 4em;
 }
 
 .socialIcons {
@@ -115,6 +116,12 @@
 
   .myInfo {
     width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutContainer {
+    margin-top: -5em;
   }
 }
 

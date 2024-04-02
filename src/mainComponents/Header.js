@@ -1,46 +1,77 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Header.module.css";
-import { Navbar } from "react-bootstrap";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className={style.header}>
-      <Navbar.Brand href="#home">
-        <img
-          src="/logo.png"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-          alt="Logo"
-        />
-      </Navbar.Brand>
-      <Navbar expand="md" bg="light" variant="light">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <ul className={`navbar-nav mr-auto ${style.navItems}`}>
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
-              </a>
+    <div className={style.all}>
+      <div className={style.header}>
+        <a href="#about">
+          {" "}
+          <div className={style.logo}>
+            <img
+              src="/logo.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="Logo"
+            />
+          </div>
+        </a>
+
+        <div className={style.navItems}>
+          <ul>
+            <li>
+              <a href="#about">About</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#skills">
-                Skills
-              </a>
+            <li>
+              <a href="#skills">Skills</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#work">
-                Work
-              </a>
+            <li>
+              <a href="#work">Work</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">
-                Contact
-              </a>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
-        </Navbar.Collapse>
-      </Navbar>
+        </div>
+        {
+          <div className={style.hamburger} onClick={toggleMenu}>
+            <div
+              className={`${style.bar} ${isMenuOpen ? style.open : ""}`}
+            ></div>
+            <div
+              className={`${style.bar} ${isMenuOpen ? style.open : ""}`}
+            ></div>
+            <div
+              className={`${style.bar} ${isMenuOpen ? style.open : ""}`}
+            ></div>
+          </div>
+        }
+      </div>
+      {window.innerWidth <= 500 && isMenuOpen && (
+        <div className={style.mobileMenu}>
+          <ul>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { gameShop, instagram, extension } from "../utils/projects";
 
 const Work = () => {
   return (
-    <div className={style.section}>
+    <div className={style.section} id="work">
       <h2>Work</h2>
       <span>Most recent Work</span>
       <div>
