@@ -38,7 +38,9 @@ const About = () => {
             High level experience in software development, producing quality
             work for clients and myself.
           </p>
-          <button>Download CV</button>
+          <a href="/myCv.pdf" download>
+            <button>Download CV</button>
+          </a>
         </div>
         <img className={style.photo} src="/me.png" alt="my imge" />
       </div>
