@@ -23,7 +23,7 @@ const ContactWays = ({ contactWay }) => {
   } else {
     info.icon = faLocationDot;
     info.way = "Location";
-    info.contact = "Zgošča b.b. Kakanj";
+    info.contact = "Senad Poturak Senči 54";
   }
 
   return (
